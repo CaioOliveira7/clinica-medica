@@ -1,0 +1,88 @@
+/*Global*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.limita-secao{
+    max-width: 1024px;
+    margin: auto;
+}
+/*Global*/
+/*Header*/
+.conteiner-topo{
+    width: 100%;
+    background-color: aqua;
+}
+
+.topo{
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links a{
+    padding:0 5px 0 5px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+}
+
+a:hover{
+    color: #000;
+}
+/*Header*/
+/*Links Especialidades*/
+.limita-secao div{
+    text-align: center;
+}
+
+.links-esp{
+    padding: 20px 0 50px 0;
+}
+
+.links-esp a{
+    font-size: 18px;
+    margin: 0 10px 0 10px;
+    text-decoration: none;
+    color: #0000008c;
+    border-bottom: 2px solid aqua;
+}
+
+.limita-secao div h2{
+    color: #0000008c;
+}
+/*Links Especialidades*/
+/*Box Especialidades Texto*/
+.texto h3{
+    padding: 50px 0 20px 0;
+    color: #0000008c;
+}
+
+.texto p{
+    width: 60%;
+    margin: auto;
+    color: #0000008c;
+    padding-bottom: 20px;
+}
+/*Box Especialidades Texto*/
+/*Box Especialidades Imagem*/
+.tabela img{
+    width: 250px;
+}
+/*Box Especialidades tabela*/
+.tabela{
+    display: flex;
+    justify-content: center;
+}
+
+.tabela table thead{
+    background-color: aqua;
+}
+
+.container-box-especialidades .limita-secao{
+    background-color: antiquewhite;
+}
