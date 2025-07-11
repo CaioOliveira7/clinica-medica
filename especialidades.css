@@ -32,7 +32,7 @@
 }
 
 a:hover{
-    color: #000;
+    color: #aeb0be;
 }
 /*Header*/
 /*Links Especialidades*/
@@ -50,6 +50,10 @@ a:hover{
     text-decoration: none;
     color: #0000008c;
     border-bottom: 2px solid aqua;
+}
+
+.links-esp a:hover{
+    color: #aeb0be;
 }
 
 .limita-secao div h2{
@@ -71,16 +75,37 @@ a:hover{
 /*Box Especialidades Texto*/
 /*Box Especialidades Imagem*/
 .tabela img{
-    width: 250px;
+    width: 30%;
 }
 /*Box Especialidades tabela*/
 .tabela{
     display: flex;
-    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;    
+}
+
+.tabela table{
+    width: 70%;
 }
 
 .tabela table thead{
     background-color: aqua;
+}
+
+.tabela table thead th{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.tabela table tbody td{
+    text-align: left; 
+    padding-left: 10px;   
+}
+
+.tabela-sem-borda{
+    border-collapse: collapse;
 }
 
 tbody tr:nth-of-type(odd){
@@ -106,3 +131,30 @@ tbody tr:nth-of-type(even){
     font-weight: 500;
 }
 /*Footer*/
+/*Queries*/
+@media (max-width: 425px) {
+    .topo .container-topo { flex-direction: column; }
+    .topo-titulo { margin: 10px 0; }
+    .topo-links { width: 100%; border-top: 1px solid #009fa5; justify-content: space-around;}
+    }
+
+    @media (max-width: 768px) {
+  .tabela img {
+    display: none;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  .tabela {
+    height: auto;
+    justify-content: center;
+  }
+}
+
+@media ( max-width: 425px) {
+  .tabela {
+    padding: 0;
+    }
+}
